@@ -1,0 +1,99 @@
+body {
+  font-family: 'Hunger';
+  font-size: 22px;
+  text-align: center;
+  background: rgb(243,243,243);
+  height: 100vh;
+  margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+@font-face {
+  font-family: 'Hunger';
+  src: url(Hunger.ttf);
+}
+
+.App {
+  height: 100vh;
+  background: url("backGround.jpg") no-repeat;
+  background-size: cover;
+}
+
+img {
+  width: 40%;
+  padding-top: 30px;
+}
+ 
+.main {
+  text-align: center;
+} 
+
+button {
+  margin: 10px;
+  padding: 10px 30px 10px 30px;
+  background-color: black;
+  color: white;
+}
+
+.Home {
+  margin-top: 80px;
+  animation: fadeIn 10s;
+}
+
+ .row {
+  display: flex;
+  justify-content: center;
+} 
+ 
+.PickPlayer, .PickRestaurant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}  
+
+.location {
+  padding-top: 30px;
+}
+
+.winner {
+  font-size: 20px;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+}
+
+.logo{
+  animation: fadeIn 10s;
+}
+
+.Reviews img{
+  width: 10%;
+}
+
+@media(max-width: 700px){
+  .row{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .PickPlayer, .PickRestaurant, .Reviews, .Home {
+    background: rgba(0,0,0,0.4);
+  }
+
+  p {
+    color: white;
+  }
+
+  h1 {
+    color: white;
+  }
+}
