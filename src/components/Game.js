@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Button } from 'semantic-ui-react';
 
 import Players from '../components/Players';
 import Restaurants from '../components/Restaurants';
@@ -76,8 +77,20 @@ export default class Game extends Component {
   }  
   
   render(){
+    const { players, restaurants } = this.state;
+
     return(
       <div className='Game'>
+
+        <Button 
+          size='massive'
+          color='black'
+          onClick={this.play}
+          disabled={players.length < 2 || restaurants.length < 1}
+        >
+          Play
+        </Button>
+
         <div className='row'>
           
         <Players 
@@ -95,8 +108,6 @@ export default class Game extends Component {
         />
 
         </div>
-
-        <button className='Start' onClick={this.play}>Play</button>
       </div>
     )
   }

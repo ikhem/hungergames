@@ -1,13 +1,22 @@
 import React from 'react';
+import { Button, Input } from 'semantic-ui-react';
 
 export default function Restaurants(props){
   return(
     <div className="PickRestaurant">
       <h1>District</h1>
 
-      <input value={props.input} onChange={(e) => props.handleChange( e.target.value, 'restaurants')} />
+      <Input value={props.input} onChange={(e) => props.handleChange( e.target.value, 'restaurants')} />
 
-      <button onClick={props.addRestaurant}>Add District</button>
+      <div className='controls'>
+        <Button
+          size='huge'
+          color='black'
+          onClick={props.addRestaurant}
+        >
+          Add District
+        </Button>
+      </div>
 
       {
         props.restaurants.map((restaurant, i) => {

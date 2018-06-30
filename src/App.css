@@ -14,6 +14,10 @@ body {
   src: url(Hunger.ttf);
 }
 
+.controls {
+  margin: 30px;
+}
+
 .App {
   height: 100vh;
   background: url("backGround.jpg") no-repeat;

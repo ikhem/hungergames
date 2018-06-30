@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Button } from 'semantic-ui-react';
+
 import { getLocation } from './../locate';
 import { getLatLong } from './../locate';
 import { Link } from 'react-router-dom';
@@ -71,7 +73,12 @@ export default class Reviews extends Component {
         })}
         </div>
 
-        <Link to='/'><button>Play Again</button></Link>
+        <Link to='/'>
+          <Button
+            size='massive'
+            color='black'
+          >Play Again</Button>
+        </Link>
       </div>
     )
   }

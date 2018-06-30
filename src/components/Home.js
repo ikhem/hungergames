@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Button } from 'semantic-ui-react';
+
 import { Link } from 'react-router-dom';
 
 export default class Home extends Component {
@@ -12,7 +14,9 @@ export default class Home extends Component {
         <p>Choose your venues of choice</p>
         <p>Winner treats everyone to the venue of choice</p>
 
-        <Link to='/Game'><button className='Start'>Start</button></Link>
+        <Link to='/Game'>
+          <Button size='massive' color='black'>Start</Button>
+        </Link>
       </div>
     )
   }
