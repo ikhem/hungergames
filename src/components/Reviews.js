@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Button } from 'semantic-ui-react';
 
-import { getLocation } from './../locate';
-import { getLatLong } from './../locate';
+import { getLocation } from '../api/locate';
+import { getLatLong } from '../api/locate';
 import { Link } from 'react-router-dom';
 
 export default class Reviews extends Component {
@@ -30,7 +30,7 @@ export default class Reviews extends Component {
 
   componentDidMount(){
     const winner = this.props.match.params.name
-    const venue = this.props.match.params.Restaurant
+    const venue = this.props.match.params.restaurant
 
     getLocation(winner, venue, this.state.lat, this.state.long).then(response => {
       if(!response){

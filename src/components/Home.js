@@ -10,9 +10,11 @@ export default class Home extends Component {
       <div className='Home'>
         <h1>Rules:</h1>
 
-        <p>"Pick" your volunteers</p>
-        <p>Choose your venues of choice</p>
-        <p>Winner treats everyone to the venue of choice</p>
+        <ol>
+          <li>"Pick" your volunteers</li>
+          <li>Choose your venue of choice</li>
+          <li>Winner treats everyone to the venue of choice</li>
+        </ol>
 
         <Link to='/Game'>
           <Button size='massive' color='black'>Start</Button>

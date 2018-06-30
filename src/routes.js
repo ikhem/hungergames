@@ -11,10 +11,10 @@ import Reviews from './components/Reviews';
 export default (
   <Router>
     <div className="main">
-      <img className='logo' src={header} alt='hunger games logo'/>  
+      <img className='header' src={header} alt='hunger games logo'/>  
       <Route exact path='/' component={Home} />  
-      <Route path='/Game' component={Game} />
-      <Route path='/Reviews/:Restaurant/:name' component={Reviews} />
+      <Route path='/game' component={Game} />
+      <Route path='/reviews/:restaurant/:name' component={Reviews} />
     </div>
   </Router>
 )

@@ -1,5 +1,5 @@
 body {
-  font-family: 'Hunger';
+  /* font-family: 'Hunger'; */
   font-size: 22px;
   text-align: center;
   background: rgb(243,243,243);
@@ -9,14 +9,18 @@ body {
 	border: 0;
 }
 
-@font-face {
+li {
+  list-style: none;
+}
+/* @font-face {
   font-family: 'Hunger';
   src: url(Hunger.ttf);
-}
+} */
 
 .controls {
   margin: 30px;
 }
+
 
 .App {
   height: 100vh;
@@ -24,7 +28,7 @@ body {
   background-size: cover;
 }
 
-img {
+.header {
   width: 40%;
   padding-top: 30px;
 }
@@ -42,7 +46,7 @@ button {
 
 .Home {
   margin-top: 80px;
-  animation: fadeIn 10s;
+  animation: fadeIn 5s;
 }
 
  .row {
